@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amplify Sample Project</title>
+	<link rel="stylesheet" href="./node_modules/amplify-styles/dist/assets/toolkit/styles/amplify-external-styles.css">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="multi-select-demo">
+    <div class="amplify-dropdown amplify-multi-select" id="multi-select-menu">
+        <button class="btn" type="button" aria-haspopup="true" aria-expanded="false" id="multi-select-button">Select multiple items</button>
+        <div class="dropdown-menu" aria-labelledby="multi-select-button">
+            <label tabindex="0" class="dropdown-item" role="checkbox" aria-checked="false" onfocus="readAriaLabel(event)">
+                <input type="checkbox" value="on">
+                <div class="checkbox-div"></div>
+                <span>Teacher</span>
+            </label>
+            <label tabindex="0" class="dropdown-item" role="checkbox" aria-checked="false" onfocus="readAriaLabel(event)">
+                <input type="checkbox" value="on">
+                <div class="checkbox-div"></div>
+                <span>Administrator</span>
+            </label>
+            <label tabindex="0" class="dropdown-item" role="checkbox" aria-checked="false" onfocus="readAriaLabel(event)">
+                <input type="checkbox" value="on">
+                <div class="checkbox-div"></div>
+                <span>Principal</span>
+            </label>
+            <label tabindex="0" class="dropdown-item" role="checkbox" aria-checked="false" onfocus="readAriaLabel(event)">
+                <input type="checkbox" value="on">
+                <div class="checkbox-div"></div>
+                <span>Staff</span>
+            </label>
+            <label tabindex="0" class="dropdown-item" role="checkbox" aria-checked="false" onfocus="readAriaLabel(event)">
+                <input type="checkbox" value="on">
+                <div class="checkbox-div"></div>
+                <span>Assistant to the Associate Minister of Directors</span>
+            </label>
+            <label tabindex="0" class="dropdown-item" role="checkbox" aria-checked="false" onfocus="readAriaLabel(event)">
+                <input type="checkbox" value="on">
+                <div class="checkbox-div"></div>
+                <span>Evaluator</span>
+            </label>
+        </div>
+    </div>
+</div>
+
+	
+    <script src="https://amplifylitco.github.io/styles/assets/toolkit/scripts/toolkit.js"></script>
+	<script src="main.js"></script>	
+</body>
+</html>

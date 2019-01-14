@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/bratliff/.nvm/versions/node/v6.14.3/bin/node',
+1 verbose cli   '/Users/bratliff/.nvm/versions/node/v6.14.3/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--registry',
+1 verbose cli   'https://amplearning.jfrog.io/amplearning/api/npm/npm-local/',
+1 verbose cli   'amplify-styles' ]
+2 info using npm@3.10.10
+3 info using node@v6.14.3
+4 verbose config Skipping project config: /Users/bratliff/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData amplify-styles
+9 silly fetchNamedPackageData amplify-styles
+10 silly mapToRegistry name amplify-styles
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://amplearning.jfrog.io/amplearning/api/npm/npm-local/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'amplify-styles',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'amplify-styles',
+13 silly mapToRegistry   name: 'amplify-styles',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://amplearning.jfrog.io/amplearning/api/npm/npm-local/amplify-styles
+15 verbose request uri https://amplearning.jfrog.io/amplearning/api/npm/npm-local/amplify-styles
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 2:16:31 PM
+18 verbose request id a65b1370c37a6f49
+19 http request GET https://amplearning.jfrog.io/amplearning/api/npm/npm-local/amplify-styles
+20 http 403 https://amplearning.jfrog.io/amplearning/api/npm/npm-local/amplify-styles
+21 verbose headers { 'content-type': 'application/json',
+21 verbose headers   date: 'Fri, 11 Jan 2019 19:16:32 GMT',
+21 verbose headers   server: 'Artifactory/6.5.13',
+21 verbose headers   'x-artifactory-id': 'aolshared5c-amplearning',
+21 verbose headers   'x-node': 'nginx-shared2c.prod-use1',
+21 verbose headers   'transfer-encoding': 'chunked',
+21 verbose headers   connection: 'keep-alive' }
+22 silly get cb [ 403,
+22 silly get   { 'content-type': 'application/json',
+22 silly get     date: 'Fri, 11 Jan 2019 19:16:32 GMT',
+22 silly get     server: 'Artifactory/6.5.13',
+22 silly get     'x-artifactory-id': 'aolshared5c-amplearning',
+22 silly get     'x-node': 'nginx-shared2c.prod-use1',
+22 silly get     'transfer-encoding': 'chunked',
+22 silly get     connection: 'keep-alive' } ]
+23 silly fetchPackageMetaData Error: forbidden You don't have access to this package: amplearning
+23 silly fetchPackageMetaData     at makeError (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+23 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+23 silly fetchPackageMetaData     at Request._callback (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+23 silly fetchPackageMetaData     at Request.self.callback (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:187:22)
+23 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+23 silly fetchPackageMetaData     at Request.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+23 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+23 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:969:12)
+23 silly fetchPackageMetaData  error for amplify-styles { Error: forbidden You don't have access to this package: amplearning
+23 silly fetchPackageMetaData     at makeError (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+23 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+23 silly fetchPackageMetaData     at Request._callback (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+23 silly fetchPackageMetaData     at Request.self.callback (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:187:22)
+23 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+23 silly fetchPackageMetaData     at Request.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+23 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+23 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:969:12) pkgid: 'amplearning', statusCode: 403, code: 'E403' }
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Finishing
+27 silly install printInstalled
+28 verbose stack Error: forbidden You don't have access to this package: amplearning
+28 verbose stack     at makeError (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+28 verbose stack     at CachingRegistryClient.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+28 verbose stack     at Request._callback (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+28 verbose stack     at Request.self.callback (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:187:22)
+28 verbose stack     at emitTwo (events.js:106:13)
+28 verbose stack     at Request.emit (events.js:191:7)
+28 verbose stack     at Request.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+28 verbose stack     at emitOne (events.js:96:13)
+28 verbose stack     at Request.emit (events.js:188:7)
+28 verbose stack     at IncomingMessage.<anonymous> (/Users/bratliff/.nvm/versions/node/v6.14.3/lib/node_modules/npm/node_modules/request/request.js:969:12)
+29 verbose statusCode 403
+30 verbose pkgid amplearning
+31 verbose cwd /Users/bratliff/Documents/amplify/amplify-sample-project
+32 error Darwin 17.7.0
+33 error argv "/Users/bratliff/.nvm/versions/node/v6.14.3/bin/node" "/Users/bratliff/.nvm/versions/node/v6.14.3/bin/npm" "install" "--registry" "https://amplearning.jfrog.io/amplearning/api/npm/npm-local/" "amplify-styles"
+34 error node v6.14.3
+35 error npm  v3.10.10
+36 error code E403
+37 error forbidden You don't have access to this package: amplearning
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]
